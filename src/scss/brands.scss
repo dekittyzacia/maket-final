@@ -54,7 +54,7 @@ $background: #F8F8F8;
 
 .swiper1 {
     height: 116px;
-    width: 320px;
+    width: 100%;
     overflow: hidden;
     position: relative;
 }
@@ -123,7 +123,7 @@ $background: #F8F8F8;
 }
 
 .swiper-pagination-bullet-active {
-    --swiper-theme-color: $textback;
+    background-color: $textback;
 }
 
 

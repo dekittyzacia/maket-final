@@ -90,6 +90,28 @@ $hover: #e9e9e9;
         width: 1046px;
         padding-left: 32px;
     }
+
+    .price {
+        &__subtitle {
+            min-width: 934px;
+            max-width: 934px;
+        }
+
+        &__subserv {
+            min-width: 461px;
+            max-width: 461px;
+        }
+
+        &__subprice {
+            min-width: 177px;
+            max-width: 177px;
+        }
+
+        &__subterm {
+            min-width: 296px;
+            max-width: 296px;
+        }
+    }
 }
 
 .price {

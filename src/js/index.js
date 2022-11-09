@@ -61,15 +61,15 @@ const swiperPrice = new Swiper('.swiper3', {
 });
 
 
-let closeSideMenu = document.querySelector('.side-menu__exit-menu');
-let sideMenu = document.querySelector('.side-menu');
+const closeSideMenu = document.querySelector('.side-menu__exit-menu');
+const sideMenu = document.querySelector('.side-menu');
 
 if (window.innerWidth >= 1366) {
     sideMenu.classList.remove('left-modal');
 }
 
-let overlayLeft = document.querySelector('.left-overlay');
-let openSideMenu = document.querySelector('.header__open-menu');
+const overlayLeft = document.querySelector('.left-overlay');
+const openSideMenu = document.querySelector('.header__open-menu');
 
 openSideMenu.addEventListener('click', function() {
     sideMenu.classList.add('left-modal--active');
@@ -87,10 +87,10 @@ closeSideMenu.addEventListener ('click', function() {
 });
 
 
-let aboutShowMoreButton = document.querySelector ('.about__more-button');
-let aboutShowLessButton = document.querySelector ('.about__less-button');
-let aboutTextBox = document.querySelector ('.about__text');
-let hiddenText = document.querySelector('.content--full');
+const aboutShowMoreButton = document.querySelector ('.about__more-button');
+const aboutShowLessButton = document.querySelector ('.about__less-button');
+const aboutTextBox = document.querySelector ('.about__text');
+const hiddenText = document.querySelector('.content--full');
 
 aboutShowMoreButton.addEventListener ('click', function() {
     aboutTextBox.style.height = 'auto'; 
@@ -113,11 +113,11 @@ aboutShowLessButton.addEventListener ('click', function() {
     aboutShowLessButton.classList.add('more-less--hidden');
 });
 
-let openFeedbackFormSide = document.querySelector ('.feedback-button');
-let openFeedbackFormHead = document.querySelector('.feedback-button2');
-let closeFeedbackButton = document.querySelector ('.feedback__exit-modal');
-let overlay = document.querySelector('.overlay');
-let feedbackForm = document.querySelector('.feedback');
+const openFeedbackFormSide = document.querySelector ('.feedback-button');
+const openFeedbackFormHead = document.querySelector('.feedback-button2');
+const closeFeedbackButton = document.querySelector ('.feedback__exit-modal');
+const overlay = document.querySelector('.overlay');
+const feedbackForm = document.querySelector('.feedback');
 
 openFeedbackFormSide.addEventListener('click', function() {
     feedbackForm.classList.add('feedback--active');
@@ -138,11 +138,11 @@ closeFeedbackButton.addEventListener ('click', function() {
 });
 
 
-let openCallRequestSide = document.querySelector ('.call-button');
-let openCallRequestHead = document.querySelector ('.call-button2');
-let closeCallRequest = document.querySelector ('.сallrequest__exit-modal');
-let overlayCallRequest = document.querySelector('.callrequest__overlay');
-let callRequest = document.querySelector ('.callrequest');
+const openCallRequestSide = document.querySelector ('.call-button');
+const openCallRequestHead = document.querySelector ('.call-button2');
+const closeCallRequest = document.querySelector ('.сallrequest__exit-modal');
+const overlayCallRequest = document.querySelector('.callrequest__overlay');
+const callRequest = document.querySelector ('.callrequest');
 
 openCallRequestSide.addEventListener('click', function() {
     callRequest.classList.add('callrequest--active');
@@ -163,9 +163,9 @@ closeCallRequest.addEventListener ('click', function() {
 });
 
 
-let brandsShowMoreButton = document.querySelector('.brands__more-button');
-let brandsShowLessButton = document.querySelector('.brands__less-button');
-let brandsList = document.querySelector('.swiper1');
+const brandsShowMoreButton = document.querySelector('.brands__more-button');
+const brandsShowLessButton = document.querySelector('.brands__less-button');
+const brandsList = document.querySelector('.swiper1');
 
 brandsShowMoreButton.addEventListener ('click', function () {
     brandsShowMoreButton.classList.add('button--hidden');
@@ -179,9 +179,9 @@ brandsShowLessButton.addEventListener ('click', function () {
     brandsShowMoreButton.classList.remove('button--hidden');
 });
 
-let techShowMoreButton = document.querySelector('.tech__more-button');
-let techShowLessButton = document.querySelector('.tech__less-button');
-let techList = document.querySelector('.tech__wrapper');
+const techShowMoreButton = document.querySelector('.tech__more-button');
+const techShowLessButton = document.querySelector('.tech__less-button');
+const techList = document.querySelector('.tech__wrapper');
 
 techShowMoreButton.addEventListener ('click', function () {
     techShowMoreButton.classList.add('button--hidden');
